@@ -1,0 +1,22 @@
+== Chapter 2
+
+=== Chapter 2.1
+
+Text in chapter 2.1
+
+[source,java]
+----
+public MarkupDocument build() throws IOException {
+    definitions(swagger.getDefinitions(), this.markupDocBuilder); //<1>
+    return this;
+}
+----
+<1> Text about item 1
+
+[options="header"]
+|===
+|Name of Column 1 |Name of Column 2
+| Cell in column 1, row 1 | Cell in column 2, row 1
+| Cell in column 1, row 2 | Cell in column 2, row 2
+| Cell in column 1, row 3 | Cell in column 2, row 3
+|===

@@ -1,0 +1,18 @@
+= Asciidocular
+Robert Winkler
+:icons: font
+
+This is a preamble
+
+== Chapter 1
+
+=== Chapter 1.1
+
+Text in chapter 1.1
+
+* Item 1
+* Item 2
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+include::chapter2.adoc[]
