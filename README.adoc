@@ -1,14 +1,15 @@
 = Asciidocular
 
-NOTE: It is currently under development.
+NOTE: Currently highly under development.
 
 Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full page.
 Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] to convert the AsciiDoc files into HTML.
 
 Asciidocular can be used to create a documentation site of your project or API. For example, you could use Asciidocular together with https://github.com/Swagger2Markup/swagger2markup[Swagger2Markup] to
-create a documentation site of your Swagger API.
+create a documentation site of your http://swagger.io[Swagger] API.
 
 Advantages:
+
 * No server-side components needed to convert your AsciiDoc files into HTML
 * No build process and tools needed
 * Deployable via GitHub Pages
