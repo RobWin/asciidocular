@@ -9,9 +9,35 @@ Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] 
 * No build process needed
 * Deployable via GitHub Pages
 * Responsive Bootswatch Slate (Bootstrap) theme
-* Just create an Asciidoctor files and deploy!
+* Just create a Asciidoctor files and deploy!
 
-The title of the web app is the document title.
-Each level 1 section title is a navigation item and each level 2 section title is a sub navigation item of the navigation bar.
+== Example
+
+You have to create an `index.adoc` file in the `docs` folder of the app. You can include other AsciiDoc files into the
+`index.adoc` file.
+
+----
+= Asciidocular
+Robert Winkler
+:icons: font
+
+This is a preamble.
+
+== Chapter 1
+
+=== Chapter 1.1
+
+Text in chapter 1.1
+
+* Item 1
+* Item 2
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+\include::chapter2.adoc[]
+----
+
+* The title of the web app is the document title.
+* Each level 1 section title is a top-level navigation item and each level 2 section title is a sub navigation item of the parent section in the navigation bar.
 
 image::images/asciidocular.png[]
