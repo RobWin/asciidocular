@@ -43,7 +43,7 @@ NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 \include::chapter2.adoc[]
 ----
 
-* The title of the web app is the document title.
+* The document title is the title of the web site.
 * Each level 1 section title is a top-level navigation item and each level 2 section title is a sub navigation item of the parent section in the navigation bar.
 
 image::images/asciidocular.png[]
