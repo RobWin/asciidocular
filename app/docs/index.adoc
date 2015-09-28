@@ -16,3 +16,9 @@ Text in chapter 1.1
 NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 
 include::chapter2.adoc[]
+
+include::overview.adoc[]
+
+include::paths.adoc[]
+
+include::definitions.adoc[]

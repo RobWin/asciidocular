@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('asciidocularApp')
-  .controller('MainCtrl', function ($scope, $log, asciiDocLoader) {
+  .controller('MainCtrl', function ($scope, asciiDocLoader) {
     asciiDocLoader.load()
       .success(function(data) {
         var options = Opal.hash2(
@@ -10,9 +10,6 @@ angular.module('asciidocularApp')
 
         $scope.adocument = Opal.Asciidoctor.$load(data, options);
 
+        //$scope.preamble = $scope.adocument.$find_by({ context: 'preamble' })
       });
-    $scope.selectSection = function(section){
-      $scope.selectedChapter = section;
-      $scope.convertedSection = section.$convert();
-    };
   });

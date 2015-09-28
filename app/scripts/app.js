@@ -15,12 +15,12 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'mainCtrl'
       })
-      .when('/documentation', {
+      .when('/documentation/:sectionId/:subSectionId', {
         templateUrl: 'views/documentation.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'SectionCtrl',
+        controllerAs: 'sectionCtrl'
       })
       .otherwise({
         redirectTo: '/'
