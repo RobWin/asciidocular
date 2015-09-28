@@ -1,8 +1,9 @@
 = Asciidocular
+:icons: font
 
 NOTE: Currently highly under development.
 
-Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full page.
+Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full web site.
 Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] to convert the AsciiDoc files into HTML.
 
 Asciidocular can be used to create a documentation site of your project or API. For example, you could use Asciidocular together with https://github.com/Swagger2Markup/swagger2markup[Swagger2Markup] to
@@ -42,7 +43,7 @@ NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 \include::chapter2.adoc[]
 ----
 
-* The title of the web app is the document title.
+* The document title is the title of the web site.
 * Each level 1 section title is a top-level navigation item and each level 2 section title is a sub navigation item of the parent section in the navigation bar.
 
 image::images/asciidocular.png[]
