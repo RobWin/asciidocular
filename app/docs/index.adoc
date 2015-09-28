@@ -1,23 +1,8 @@
-= Asciidocular
+= Petstore API
 Robert Winkler
 :icons: font
 
-This is a preamble
-
-== Chapter 1
-
-=== Chapter 1.1
-
-Text in chapter 1.1
-
-* Item 1
-* Item 2
-
-NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
-
-include::chapter2.adoc[]
-
-include::overview.adoc[]
+This is a sample Petstore API and this is a short introduction.
 
 include::paths.adoc[]
 

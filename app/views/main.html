@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1>{{ adocument.$doctitle() }}</h1>
   <p class="lead">
-    {{ adocument.$author() }}
+    <div ng-bind-html="convertedPreamble"></div>
   </p>
 </div>

@@ -13,9 +13,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'mainCtrl'
+        templateUrl: 'views/main.html'
       })
       .when('/documentation/:sectionId/:subSectionId', {
         templateUrl: 'views/documentation.html',
