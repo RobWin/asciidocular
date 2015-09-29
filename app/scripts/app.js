@@ -3,24 +3,35 @@
 angular
   .module('asciidocularApp', [
     'ngAnimate',
-    'ngResource',
-    'ngRoute',
+    'ui.router',
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'ncy-angular-breadcrumb'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html'
+  .constant('asciiDocFilePath', 'docs/index.adoc')
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('home', {
+        url: "/",
+        templateUrl: 'views/main.html',
+        ncyBreadcrumb: {
+          label: 'Home'
+        }
       })
-      .when('/documentation/:sectionId/:subSectionId', {
+      .state('section', {
+        url: "/:sectionId/:subSectionId",
         templateUrl: 'views/documentation.html',
         controller: 'SectionCtrl',
-        controllerAs: 'sectionCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
+        controllerAs: 'sectionCtrl',
+        ncyBreadcrumb: {
+          label: '{{selectedSectionTitle}} / {{selectedSubSectionTitle}}'
+        }
       });
+    $urlRouterProvider.otherwise('/');
+  }).config(function($breadcrumbProvider) {
+    $breadcrumbProvider.setOptions({
+      prefixStateName: 'home'
+    });
   });
