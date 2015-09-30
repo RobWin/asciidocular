@@ -1,0 +1,57 @@
+= Asciidocular
+Robert Winkler
+:icons: font
+:hardbreaks:
+
+Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full web site. Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] to convert the AsciiDoc files into HTML.
+
+*Advantages*:
+
+* No server-side components needed to convert your AsciiDoc files into HTML
+* No build process and tools needed
+* Responsive Bootswatch (Bootstrap) theme
+* Just create a Asciidoctor files and deploy!
+
+== Introduction
+
+=== AsciiDoc
+
+==== Text Formatting
+
+_italic phrase_
+
+*bold phrase*
+
+*_bold italic phrase_*
+
+`monospace phrase`
+
+==== Admonitions
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+WARNING: You can use warnings.
+
+IMPORTANT: This is important
+
+==== Lists
+
+There are several types of lists supported in AsciiDoc:
+
+* Unordered
+* Ordered
+* Labeled
+* Nested
+** Level 2
+*** Level 3
+
+====  Checklist
+
+- [x] checked
+- [ ] not checked
+
+include::chapter2.adoc[]
+
+== Chapter 3
+
+This is content without a sub chapter.
