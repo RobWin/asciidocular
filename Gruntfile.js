@@ -120,6 +120,31 @@ module.exports = function (grunt) {
       }
     },
 
+    cssmin: {
+      dist: {
+        files: {
+          '<%= yeoman.dist %>/styles/main.css': [
+            '.tmp/styles/{,*/}*.css'
+          ]
+        }
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          '<%= yeoman.dist %>/scripts/{,*/}*.js': [
+            '<%= yeoman.dist %>/scripts/{,*/}*.js'
+          ]
+        }
+      }
+    },
+    concat: {
+      dist: {
+        src: [ '<%= yeoman.dist %>/scripts/{,*/}*.js' ],
+        dest: 'dist/app.js'
+      }
+    },
+
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       options: {
@@ -307,7 +332,8 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'docs/**'
           ]
         }, {
           expand: true,
@@ -326,9 +352,6 @@ module.exports = function (grunt) {
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
-      server: [
-        'copy:styles'
-      ],
       test: [
         'copy:styles'
       ],
