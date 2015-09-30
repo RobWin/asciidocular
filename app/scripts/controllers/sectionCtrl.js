@@ -19,5 +19,5 @@ angular.module('asciidocularApp')
     });
     $scope.selectedSubSectionTitle = selectedSubSection.$title();
     //$log.debug(selectedSubSection);
-    $scope.convertedSection = selectedSubSection.$convert();
+    $scope.convertedSection = selectedSubSection.$content();
   });

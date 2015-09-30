@@ -2,7 +2,7 @@
 
 === Chapter 2.1
 
-Text in chapter 2.1
+==== Source Code Listings
 
 [source,java]
 ----
@@ -12,6 +12,8 @@ public MarkupDocument build() throws IOException {
 }
 ----
 <1> Text about item 1
+
+==== Tables
 
 [options="header"]
 |===

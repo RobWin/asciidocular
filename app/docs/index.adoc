@@ -1,6 +1,7 @@
 = Asciidocular
 Robert Winkler
 :icons: font
+:hardbreaks:
 
 Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full web site. Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] to convert the AsciiDoc files into HTML.
 
@@ -25,6 +26,14 @@ _italic phrase_
 
 `monospace phrase`
 
+==== Admonitions
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+WARNING: You can use warnings.
+
+IMPORTANT: This is important
+
 ==== Lists
 
 There are several types of lists supported in AsciiDoc:
@@ -41,12 +50,8 @@ There are several types of lists supported in AsciiDoc:
 - [x] checked
 - [ ] not checked
 
-==== Admonitions
-
-NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
-
-WARNING: You can use warnings.
-
-IMPORTANT: This is important
-
 include::chapter2.adoc[]
+
+== Chapter 3
+
+This is content without a sub chapter.
