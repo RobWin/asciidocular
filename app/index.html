@@ -13,48 +13,47 @@
     <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="ng-cloak">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <header class="navbar navbar-default navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true"
-                    ng-click="navCollapsed = !navCollapsed">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+          <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true"
+                  ng-click="navCollapsed = !navCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-            <a class="navbar-brand" ui-sref="home">{{ adocument.$doctitle() }}</a>
-          </div>
+          <a class="navbar-brand" ui-sref="home">{{ adocument.$doctitle() }}</a>
+        </div>
 
-          <div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed" id="js-navbar-collapse">
+        <div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed" id="js-navbar-collapse">
 
-            <ul class="nav navbar-nav">
-              <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-              <li ui-sref-active="active" ng-repeat="section in adocument.$sections()" dropdown keyboard-nav>
-                <a href id="docs-dropdown" dropdown-toggle>{{section.$title()}}<span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="docs-dropdown">
-                  <li ng-repeat="subSection in section.$sections()">
-                    <a ui-sref="section({sectionId:'{{section.$id()}}',subSectionId:'{{subSection.$id()}}'})">{{subSection.$title()}}</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="home" ng-click="navCollapsed = !navCollapsed">Home</a></li>
+            <li ui-sref-active="active" ng-repeat="section in adocument.$sections()" dropdown keyboard-nav>
+              <a href id="docs-dropdown" dropdown-toggle>{{section.$title()}}<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="docs-dropdown">
+                <li ng-repeat="subSection in section.$sections()">
+                  <a ng-click="navCollapsed = !navCollapsed" ui-sref="section({sectionId:'{{section.$id()}}',subSectionId:'{{subSection.$id()}}'})">{{subSection.$title()}}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div ui-view></div>
+    </header>
+    <div class="header-placeholder"></div>
+    <div role="main">
+      <div class="container">
+        <div ui-view></div>
+      </div>
     </div>
 
     <script src="bower_components/angular/angular.js"></script>
