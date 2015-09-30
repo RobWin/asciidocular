@@ -34,4 +34,15 @@ angular
     $breadcrumbProvider.setOptions({
       prefixStateName: 'home'
     });
+  }).run(function($rootScope, asciiDocLoader, asciiDocFactory, _){
+    asciiDocLoader.load()
+      .success(function(data) {
+        var asciiDoc = asciiDocFactory.load(data);
+        var preamble = _.find(asciiDoc.$blocks(), function(block){
+          return block.$context() === 'preamble';
+        });
+        $rootScope.docTitle = asciiDoc.$doctitle();
+        $rootScope.convertedPreamble = preamble.$convert();
+        $rootScope.sections = asciiDoc.$sections();
+      });
   });

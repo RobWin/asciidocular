@@ -6,7 +6,7 @@ angular.module('asciidocularApp')
     $scope.selectedSubSectionId = $stateParams.subSectionId;
     //$log.debug($scope.selectedSectionId + " " + $scope.selectedSubSectionId);
 
-    var selectedSection = _.find($scope.adocument.$sections(), function(section){
+    var selectedSection = _.find($scope.sections, function(section){
       //$log.debug("SectionId:" + section.$id());
       return section.$id() === $scope.selectedSectionId;
     });

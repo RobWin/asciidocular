@@ -4,3 +4,5 @@
 /.sass-cache
 /bower_components
 .idea
+/.iml
+/.grunt
