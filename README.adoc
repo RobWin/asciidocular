@@ -50,16 +50,16 @@ NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 \include::chapter2.adoc[]
 ----
 
-== Example
+== Examples
 
-=== Mobile
-
+=== Asciidocular on Mobile Phone
 image::images/asciidocular_mobile.png[]
 
-=== Home
+=== Asciidocular on Desktop
+==== Home
 image::images/asciidocular_home.png[]
 
-=== Sections
+==== Sections
 image::images/asciidocular_section.png[]
 
 image::images/asciidocular_section2.png[]
