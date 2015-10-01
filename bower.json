@@ -11,7 +11,7 @@
     "angular-touch": "^1.3.0",
     "asciidoctor.js": "~1.5.2",
     "bootswatch-dist": "cerulean",
-    "components-font-awesome": "~4.4.0",
+    "font-awesome": "~4.4.0",
     "highlightjs": "~8.8.0",
     "underscore": "~1.8.3"
   },
