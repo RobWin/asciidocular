@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - '0.10'
+  - '0.12'
+  - 'iojs'
+  - 'stable'
+install:
+  - npm install -g bower
+  - npm cache clean
+  - npm install
+  - bower install

@@ -16,7 +16,7 @@ Advantages:
 * No build process and tools needed
 * Deployable via GitHub Pages
 * Responsive Bootswatch (Bootstrap) theme
-* Just create a Asciidoctor files and deploy!
+* Just create AsciiDoc files and deploy!
 
 == Demo
 

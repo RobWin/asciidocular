@@ -41,7 +41,7 @@
 
         <div class="collapse navbar-collapse navbar-responsive-collapse" collapse="navCollapsed" id="js-navbar-collapse">
           <ul class="nav navbar-nav">
-            <li ui-sref-active="active" ng-repeat="section in sections" dropdown keyboard-nav>
+            <li class="dropdown" ui-sref-active="active" ng-repeat="section in sections" dropdown keyboard-nav>
               <a href id="docs-dropdown" dropdown-toggle>{{section.$title()}}<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="docs-dropdown">
                 <li ng-repeat="subSection in section.$sections()">
