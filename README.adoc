@@ -22,9 +22,21 @@ Advantages:
 
 == Demo
 
-http://robwin.github.io/asciidocular[Demo] deployed on GitHub Pages.
+http://robwin.github.io/asciidocular[Live Demo] deployed on GitHub Pages.
 
 == Usage Guide
+
+=== Building from source
+
+Make sure you have http://nodejs.org/[Node.js] installed.
+
+----
+git clone https://github.com/RobWin/asciidocular.git
+cd asciidocular
+npm build
+----
+
+=== Create AsciiDoc files
 
 You have to create an `index.adoc` file in the `docs` folder of the app. You can include other AsciiDoc files into the `index.adoc` file.
 
