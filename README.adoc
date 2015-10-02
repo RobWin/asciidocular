@@ -14,10 +14,9 @@ Since AsciiDoc syntax is just plain text, you can write an AsciiDoc document usi
 
 Advantages:
 
-* No server-side components needed to convert your AsciiDoc files into HTML
-* No build process and tools needed
-* Deployable via GitHub Pages
+* No build process and server-side tools needed to convert your AsciiDoc files into HTML
 * Responsive Bootswatch (Bootstrap) theme
+* Deployable via GitHub Pages
 * Just create AsciiDoc files and deploy!
 
 == Demo
