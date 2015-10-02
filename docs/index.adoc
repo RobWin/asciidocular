@@ -12,46 +12,9 @@ Asciidocular is a small AngularJS web app that loads http://asciidoctor.org/[Asc
 * Responsive Bootswatch (Bootstrap) theme
 * Just create a Asciidoctor files and deploy!
 
-== Introduction
+include::getting_started.adoc[]
 
-=== AsciiDoc
+include::writing.adoc[]
 
-==== Text Formatting
+include::support.adoc[]
 
-_italic phrase_
-
-*bold phrase*
-
-*_bold italic phrase_*
-
-`monospace phrase`
-
-==== Admonitions
-
-NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
-
-WARNING: You can use warnings.
-
-IMPORTANT: This is important
-
-==== Lists
-
-There are several types of lists supported in AsciiDoc:
-
-* Unordered
-* Ordered
-* Labeled
-* Nested
-** Level 2
-*** Level 3
-
-====  Checklist
-
-- [x] checked
-- [ ] not checked
-
-include::chapter2.adoc[]
-
-== Chapter 3
-
-This is content without a sub chapter.

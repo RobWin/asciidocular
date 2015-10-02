@@ -1,0 +1,21 @@
+== Support
+=== Questions
+You can ask questions about Asciidocular in https://gitter.im/Swagger2Markup/swagger2markup[Gitter].
+
+=== Bugs
+If you believe you have found a bug, please take a moment to search the existing issues. If no one else has reported the problem, please open a new issue that describes the problem in detail and, ideally, includes a test that reproduces it.
+
+=== Enhancements
+If you’d like an enhancement to be made to Asciidocular, pull requests are most welcome. The source code is on https://github.com/RobWin/asciidocular[GitHub]. You may want to search the existing issues and pull requests to see if the enhancement is already being worked on. You may also want to open a new issue to discuss a possible enhancement before work on it begins.
+
+== License
+
+=== Apache 2.0
+
+Copyright 2015 Robert Winkler
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
