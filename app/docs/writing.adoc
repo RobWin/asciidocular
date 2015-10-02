@@ -2,40 +2,6 @@
 
 === AsciiDoc Demo
 
-==== Text formatting
-
-_italic phrase_
-
-*bold phrase*
-
-*_bold italic phrase_*
-
-`monospace phrase`
-
-==== Admonitions
-
-NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
-
-WARNING: You can use warnings.
-
-IMPORTANT: This is important
-
-==== Lists
-
-There are several types of lists supported in AsciiDoc:
-
-* Unordered
-* Ordered
-* Labeled
-* Nested
-** Level 2
-*** Level 3
-
-====  Checklist
-
-- [x] checked
-- [ ] not checked
-
 ==== Source Code Listings
 
 [source,java]
@@ -54,5 +20,40 @@ public MarkupDocument build() throws IOException {
 |Name of Column 1 |Name of Column 2
 | Cell in column 1, row 1 | Cell in column 2, row 1
 | Cell in column 1, row 2 | Cell in column 2, row 2
-| Cell in column 1, row 3 | Cell in column 2, row 3
 |===
+
+==== Admonitions
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+WARNING: You can use warnings.
+
+IMPORTANT: This is important
+
+==== Text formatting
+
+_italic phrase_
+
+*bold phrase*
+
+*_bold italic phrase_*
+
+`monospace phrase`
+
+==== Lists
+
+There are several types of lists supported in AsciiDoc:
+
+* Unordered
+* Ordered
+* Labeled
+* Nested
+** Level 2
+*** Level 3
+
+====  Checklist
+
+- [x] checked
+- [ ] not checked
+
+
