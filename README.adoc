@@ -62,7 +62,7 @@ Text in chapter 1.1
 
 NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 
-\include::chapter2.adoc[] //<5>
+include::chapter2.adoc[] //<5>
 ----
 
 <1> The document title is the title of the web site.
