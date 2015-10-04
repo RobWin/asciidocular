@@ -8,7 +8,7 @@ Make sure you have http://nodejs.org/[Node.js] installed.
 ----
 git clone https://github.com/RobWin/asciidocular.git
 cd asciidocular
-npm build
+npm run build
 ----
 
 === Create AsciiDoc files
