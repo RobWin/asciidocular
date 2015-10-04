@@ -3,6 +3,7 @@ Robert Winkler
 :icons: font
 :source-highlighter: highlightjs
 :hardbreaks:
+:idprefix:
 
 http://github.com/RobWin/asciidocular[Asciidocular] is a small AngularJS web app that loads http://asciidoctor.org/[AsciiDoctor] files via Ajax and renders them as a full web site. Asciidocular uses https://github.com/asciidoctor/asciidoctor.js[asciidoctor.js] to convert the AsciiDoc files into HTML.
 
