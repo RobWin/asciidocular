@@ -20,10 +20,6 @@
 .colist>table{background-color: transparent}
 .colist>table tr>td:first-of-type{padding:0 .75em;line-height:1}
 .colist>table tr>td:last-of-type{padding:.25em 0}
-
-.listingblock pre.highlightjs{padding:0}
-.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
-.listingblock pre.prettyprint{border-width:0}
 .listingblock>.content{position:relative}
 .listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
 .listingblock:hover code[data-lang]:before{display:block}
@@ -32,3 +28,5 @@
 .listingblock code[data-lang]:before{display:block}
 
 code,kbd,pre,samp{font-family:monospace;font-size:1em}
+
+

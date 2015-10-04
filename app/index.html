@@ -24,7 +24,7 @@
     <![endif]-->
 
     <header class="navbar navbar-default">
-      <div class="container">
+      <nav class="container" role="navigation">
         <div class="navbar-header">
 
           <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true"
@@ -50,13 +50,13 @@
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
-    <div role="main">
+    <section role="main">
       <div class="container">
         <div ui-view></div>
       </div>
-    </div>
+    </section>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

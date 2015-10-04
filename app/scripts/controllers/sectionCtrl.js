@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('asciidocularApp')
-  .controller('SectionCtrl', function ($scope, $stateParams , _) {
+  .controller('SectionCtrl', function ($scope, $stateParams, _) {
     $scope.selectedSectionId = $stateParams.sectionId;
     $scope.selectedSubSectionId = $stateParams.subSectionId;
     //$log.debug($scope.selectedSectionId + " " + $scope.selectedSubSectionId);
@@ -20,4 +20,10 @@ angular.module('asciidocularApp')
     $scope.selectedSubSectionTitle = selectedSubSection.$title();
     //$log.debug(selectedSubSection);
     $scope.convertedSection = selectedSubSection.$content();
+
+    angular.element(document).ready(function () {
+      angular.forEach(angular.element(document.querySelector('pre code')), function(content) {
+        hljs.highlightBlock(content);
+      });
+    });
   });
