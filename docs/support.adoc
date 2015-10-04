@@ -1,4 +1,5 @@
-== Support
+[icon="fa fa-question"]
+== Help and bugs
 === Questions
 You can ask questions about Asciidocular in https://gitter.im/Swagger2Markup/swagger2markup[Gitter].
 
@@ -8,6 +9,7 @@ If you believe you have found a bug, please take a moment to search the existing
 === Enhancements
 If you’d like an enhancement to be made to Asciidocular, pull requests are most welcome. The source code is on https://github.com/RobWin/asciidocular[GitHub]. You may want to search the existing issues and pull requests to see if the enhancement is already being worked on. You may also want to open a new issue to discuss a possible enhancement before work on it begins.
 
+[icon="fa fa-file-text-o"]
 == License
 
 === Apache 2.0

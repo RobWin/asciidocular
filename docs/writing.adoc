@@ -1,3 +1,4 @@
+[icon="fa fa-book"]
 == Start Writing
 
 === AsciiDoc Demo
