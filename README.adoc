@@ -42,7 +42,7 @@ npm run build
 
 === Create AsciiDoc files
 
-You have to create an `index.adoc` file in the `docs` folder of the app. You can include other AsciiDoc files into the `index.adoc` file.
+You have to create an `index.adoc` file in the `docs` folder of the app.
 
 ----
 = Asciidocular //<1>
@@ -62,13 +62,14 @@ Text in chapter 1.1
 
 NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
 
-\include::chapter2.adoc[]
+\include::chapter2.adoc[] //<5>
 ----
 
 <1> The document title is the title of the web site.
 <2> The preamble of the document is the content of the jumbotron.
 <3> Each level 1 section title is a top-level navigation item
 <4> Each level 2 section title is a sub navigation item of the parent section in the navigation bar.
+<5> You can include other AsciiDoc files into the `index.adoc` file.
 
 == Examples
 
