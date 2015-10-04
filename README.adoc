@@ -19,6 +19,10 @@ Advantages:
 * Deployable via GitHub Pages
 * Just create AsciiDoc files and deploy!
 
+Features:
+* Supports highlight.js
+* Supports Font-Awesome
+
 == Demo
 
 http://robwin.github.io/asciidocular[Live Demo] deployed on GitHub Pages.
