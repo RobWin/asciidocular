@@ -20,6 +20,7 @@ Advantages:
 * Just create AsciiDoc files and deploy!
 
 Features:
+
 * Supports highlight.js
 * Supports Font-Awesome
 
